@@ -1,0 +1,27 @@
+<HTML>
+	<head>
+		<title>Program-1</title>
+	</head>
+	<body>
+		<h3 align="centre" color="red">WAP to enter age of person and check he will eligible for vote or not, where he eligible only if his age>=18.</h3>
+		<div class="box">
+			<input type="text" placeholder="Enter age" id="txt"/>
+			<button id="btn">validate</button>
+			<div id="msg"></div>
+		</div>
+		<script>
+			function validate(){
+				var age=parseInt(document.getElementById("txt").value);
+				var msg=""
+				if (age>=18){
+					msg="you are eligible for vote"
+				}
+				else{
+					msg="you are not eligible but eligible after "+(18-age)"+"year";
+				}
+				document.getElementById("msg").innerHTML=msg;
+			}
+			document.getElementById("btn").addEventListener("Click",validate);
+		</script>
+	</body>
+</HTML>
