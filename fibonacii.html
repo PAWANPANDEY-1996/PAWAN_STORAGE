@@ -1,0 +1,30 @@
+<HTML>
+	<head>
+		<title>fibonacii</title>
+	</head>
+	<body>
+		<h3 align="centre" color="red">WAP to enter term and find fibonacii series</h3>
+		<div class="box">
+			<!--<input type="text" placeholder="Enter a number" id="txt"/></br></br>
+			<button id="btn">Print Factorial</button>-->
+			
+		</div>
+		<script>
+			const number = parseInt(prompt('Enter the number of terms: '));
+			var n1 = 0
+			var n2 = 1 
+			var nextTerm;
+			document.write('Fibonacci Series:');
+			var i=1;
+			while(i<=number){
+			//for (let i = 1; i <= number; i++) {
+				document.write("<br/>"+n1);
+				nextTerm = n1 + n2;
+				n1 = n2;
+				n2 = nextTerm;
+				i++;
+			}
+				
+		</script>
+	</body>
+</HTML>

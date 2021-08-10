@@ -1,0 +1,26 @@
+<HTML>
+	<head>
+		<title>factorial</title>
+	</head>
+	<body>
+		<h3 align="centre" color="red">WAP to enter any number and print Factorial</h3>
+		<div class="box">
+			<input type="text" placeholder="Enter a number" id="txt"/></br></br>
+			<button id="btn">Print Factorial</button>
+			
+		</div>
+		<script>
+			function check(){
+				var num=parseInt(document.getElementById("txt").value);
+				var fact=1;
+				i=1;
+				while(i<=num){
+					fact *=i;
+					document.write("Factorial of"+num+"="+fact)
+					i++
+				}
+				document.getElementById("btn").addEventListener("Click",check);
+				
+		</script>
+	</body>
+</HTML>

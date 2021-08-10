@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Prime_number
+	</title>
+</head>
+
+<body>
+	<center>
+		<h3 color="green">check number is prime or not</h3>
+		
+		<hr color="red">
+		
+		<form name="myform">
+			Enter the number:
+			<input type="text" name=n value="">
+			
+			<br><br>
+			
+			<input type="button" value="Check" onClick="p()">
+			<br>
+		</form>
+	</center>
+	<script type="text/javascript">
+		function p() {
+			
+			var n, i, flag = true;
+			n = document.myform.n.value;
+			n = parseInt(n)
+			for(i = 2; i <= n - 1; i++)
+				if (n % i == 0) {
+					flag = false;
+					break;
+				}
+				
+			if (flag == true)
+				document.write(n + " is prime");
+			else
+				document.write(n + " is not prime");
+		}
+	</script>
+</body>
+
+</html>

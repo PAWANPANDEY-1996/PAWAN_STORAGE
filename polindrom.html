@@ -1,0 +1,33 @@
+<HTML>
+	<head>
+		<title>Palindrom</title>
+	</head>
+	<body>
+		<h3 align="centre" color="red">WAP to enter any number and check the number is palindrom or not</h3>
+		<div class="box">
+			<!--<input type="text" placeholder="Enter a number" id="txt"/></br></br>
+			<button id="btn">Check Prime</button>-->
+			
+		</div>
+		<script>
+			//function reverseDigits(num)
+			//{
+			const num = parseInt(prompt('Enter the number '));
+			let rev_num = 0;
+			while (num > 0) {
+			rev_num = rev_num * 10 + num % 10;
+			num = Math.floor(num / 10);
+			}
+			//return rev_num;
+			//}
+			//function isPalindrome(n)
+			//{
+			let rev_n = reverseDigits(n);
+			if (rev_n == n)
+			document.write(num+"is palindrom");
+			else
+			document.write(num+"is not palindrom");
+			//}
+		</script>
+	</body>
+</HTML>
