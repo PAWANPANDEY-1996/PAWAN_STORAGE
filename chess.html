@@ -1,0 +1,44 @@
+<HTML>
+	<head>
+		<title>Chess_Board</title>
+		<style>
+			#box1{
+				height:50px;
+				width:50px;
+				background-color:yellow;
+				float:left;
+			}
+			#box2{
+				height:50px;
+				width:50px;
+				background-color:black;
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Hii..Its my Chess_Board program</h3>
+		<div id="box1">
+		</div>
+			<!--<input type="text" placeholder="Enter a number" id="txt"/></br></br>
+			<button id="btn">Print Factorial</button>-->
+		<div id="box2">	
+		</div>
+		<script>
+		
+			var m=document.getElementById("box1");
+			var n=document.getElementById("box2");
+			for(var i=0;i<8;i++){
+				for(var j=0;j<8;j++){
+					if(j%2==0){
+					document.write(n);
+					}
+					else{
+					document.write(m)
+					}
+				}
+				document.write("<br/>")
+			}
+		</script>
+	</body>
+</HTML>
