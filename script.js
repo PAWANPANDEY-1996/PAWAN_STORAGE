@@ -11,6 +11,7 @@ var b2=new Books(2,"CSS",700,"Ivans Bayross")
 books.push(b1)
 books.push(b2)
 
+
 function AddBook(){
     var title=_("title").value;
     var price=_("price").value;
