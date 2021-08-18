@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: bisque;
+    background-color: rgb(226, 177, 205);
 }
 .container{
     width: 94%;
@@ -9,14 +9,15 @@ body{
 }
 .card{
     width: 50%;
-    background-color: cadetblue;
+    background-color: rgb(84, 8, 226);
     margin: auto;
 }
 .card-header{
     padding: 8px;
     background-color: rgb(4, 54, 56);
     text-align: center;
-    color: #fff;
+    color: rgb(240, 236, 12);
+    font-weight: bold;
 }
 .card-body{
     padding: 10px 15px;
