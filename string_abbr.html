@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>String_abbreviation</title>
+	</head>
+	<body>
+		<h3>W.A.P to enter a string and Print in abbreviated form</h3>
+		<script>
+			function printInitials(name)
+    {
+        if (name.length == 0)
+            return;
+        document.write(name[0].toUpperCase());
+        for (let i = 1; i < name.length - 1; i++)
+            if (name[i] == ' ')
+                document.write(" " + name[i + 1].toUpperCase());
+    } 
+			let name = prompt("enter the name");
+			printInitials(name);
+		</script>
+	</body>
+</html>
